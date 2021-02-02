@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="emp" class="com.thinkitive.Employee" scope="prototype">
+
+
+		<property name="eid" value="26"></property>
+		<property name="ename" value="Sunny"></property>
+		<property name="salary" value="23456"></property>
+
+		<property name="addr">
+			<list>
+				<bean class="com.thinkitive.Address">
+					<property name="pincode" value="421202"></property>
+					<property name="city" value="Mumbai"></property>
+				</bean>
+				<bean class="com.thinkitive.Address">
+					<property name="pincode" value="4000"></property>
+					<property name="city" value="Pune"></property>
+				</bean>
+				<bean class="com.thinkitive.Address">
+					<property name="pincode" value="5000"></property>
+					<property name="city" value="Switz"></property>
+				</bean>
+			</list>
+		</property>
+
+	</bean>
+
+</beans>

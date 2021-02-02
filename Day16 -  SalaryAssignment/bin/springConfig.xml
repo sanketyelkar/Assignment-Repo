@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	
+	<bean id="emp" class="com.thinkitive.Employee" scope="prototype"  >
+		<constructor-arg name="ename" value="Sunny"></constructor-arg>
+		<constructor-arg name="basicSalary" value="22000"></constructor-arg>
+		<constructor-arg name="medicalAllowance" value="2000"></constructor-arg>
+	</bean>
+
+	<bean id="emp2" class="com.thinkitive.Employee" scope="prototype"  >
+		<constructor-arg name="ename" value="Sunny"></constructor-arg>
+		<constructor-arg name="basicSalary" value="32000"></constructor-arg>
+		<constructor-arg name="medicalAllowance" value="2050"></constructor-arg>
+	</bean>
+
+</beans>
